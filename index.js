@@ -21,7 +21,6 @@ const backList = document.querySelector(".content_learn_card_back_inner");
 const footer = document.querySelector(".content_body_card_footer");
 
 btn.addEventListener("click", () => {
-  console.log("ok");
   body.classList.add("hide");
   contentLearn.classList.remove("hide");
   MenuBtn.classList.remove("hide");
@@ -49,7 +48,6 @@ for (let i = 0; i < MenuList.length; i++) {
   MenuList[i].addEventListener("click", () => {
     Menu.classList.add("hide");
     changeCard(i);
-    console.log(i);
   });
 }
 
@@ -1737,7 +1735,6 @@ function backbtn() {
 }
 
 function playSound(index) {
-  console.log(soundArr);
   soundArr[index].play();
 }
 
